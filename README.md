@@ -14,32 +14,41 @@
 
 ## Setup
 
-### 1. Clone the repository
+### Clone the repository
 ```bash
 git clone https://github.com/yourusername/dockerhub-mcp-server.git
 cd dockerhub-mcp-server
+```
 
-Install dependencies
+### Install dependencies
+```bash
 npm install
+```
 
-Create a .env file in the project root
+### Create a .env file in the project root
+```bash
 DOCKER_USERNAME=your_dockerhub_username
 DOCKER_PAT=your_dockerhub_personal_access_token
+```
 
-Run the server
-Development mode
+### Run the serverin Development mode
+```bash
 node --loader ts-node/esm src/index.ts
+```
 
-Build and run in production mode
+### Build and run in production mode
+```bash
 npm run build
 node build/index.js
+```
 
 
-You should see:
-
+### You should see:
+```bash
 MCP server running — waiting for client...
+```
 
-Usage
+### Usage
 
 This server can be integrated with any MCP client such as Claude Desktop.
 It exposes all DockerHub functionalities as MCP tools, which can be invoked via the MCP client interface.
